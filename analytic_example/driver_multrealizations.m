@@ -65,7 +65,7 @@ X_transf = X .* MU' * perturb + MU'; % the input transformed to non standard int
 int_length = 2*perturb*MU; % size of transformed interval for Uniform RVs
 
 QoI_evals = zeros(Nq, 1);
-QoI_evals = compute_qoi_analytic(1, X_transf, tau);
+QoI_evals = compute_qoi_analytic(X_transf, tau);
 pce_quad = K * QoI_evals;
 
 for k = 1 : ndim

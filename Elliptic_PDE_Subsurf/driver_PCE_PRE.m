@@ -24,7 +24,7 @@ n_ord = 5; % PCE total polynomial order
 pc_type = 'LEGENDRE';
 pcdata = uq_pcset(n_ord, ndim, pc_type);
 % Rare event initialization for subset simulation code
-N_SS = 100; % number of inner QoI evals for SS for each outer QoI eval
+N_SS = 250; % number of inner QoI evals for SS for each outer QoI eval
 tau_RE = 4.5;
 p0 = 0.1;
 
@@ -36,7 +36,7 @@ mu = [k1; k2; k3];   % mean of the parameters
 perturb = 0.1; % perturbation of parameters about the mean
 
 % PCE quadrature setup
-numberOf1DNodes = 5;
+numberOf1DNodes = 7;
 [quadrature] = uq_quadrature(ndim, numberOf1DNodes, pc_type);
 Nq = quadrature.nquad;
 X = quadrature.nodes;

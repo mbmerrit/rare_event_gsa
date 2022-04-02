@@ -92,7 +92,7 @@ pce_quad = K * QoI_evals_quad;
 toc
 
 for k = 1 : ndim
-        [T_pce_quad(k)] = uq_getTotalSensitivity(pcdata, pce_quad, k);
+    [T_pce_quad(k)] = uq_getTotalSensitivity(pcdata, pce_quad, k);
 end
 
 % verification step - this blopck can sample the PCE for comparing PDFs
@@ -148,7 +148,7 @@ tau = 5e-2; % regularization coefficient for sparse regression
 [pce_spreg, L] = uq_l1regression(pcdata, X_lhs, QoI_evals_lhs, tau, opts);
 
 for k = 1 : ndim
-        [T_spreg_lhs(k)] = uq_getTotalSensitivity(pcdata, pce_spreg, k);
+    [T_spreg_lhs(k)] = uq_getTotalSensitivity(pcdata, pce_spreg, k);
 end
 
 %% Plot all results together

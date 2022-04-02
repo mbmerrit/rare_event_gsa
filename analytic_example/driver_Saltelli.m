@@ -39,7 +39,7 @@ XB = -1 + 2 * lhsdesign(N, ndim);  % but drawing samples is more expensive
 
 A = repmat(0.5*(a+b)',N,1) + 0.5*(b-a)'.*XA;
 B = repmat(0.5*(a+b)',N,1) + 0.5*(b-a)'.*XB;
-qC = zeros(N,M,ndim);
+qC = zeros(N,ndim);
 
 %
 % sampling loop
@@ -51,7 +51,7 @@ fprintf('B / ');
 for k = 1:ndim % this substitutes one column of B into each A, then evaluates
    C = A;
    C(:,k) = B(:,k);  % here you are varying one parameter at a time
-   [ qC(:,:,k)] = compute_qoi_analytic(ßC,beta); 
+   [ qC(:,k)] = compute_qoi_analytic(C,beta); 
    fprintf('C%d / ',k);
 end
 

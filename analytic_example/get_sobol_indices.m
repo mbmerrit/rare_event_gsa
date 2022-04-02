@@ -1,6 +1,5 @@
 function [SobolIndices] = get_sobol_indices(YA_full,YB_full,YC_full)
-ndim = size(YC_full, 3);
-[N,M] = size(YA_full);
+[N,ndim] = size(YC_full); M = 1;
 T = zeros(M,ndim);
 S = zeros(M,ndim);
 

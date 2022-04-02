@@ -15,8 +15,8 @@ clear
 %
 % some initialization
 %
-N_SS = 5e2; % number of inner QoI evals for SS for each outer QoI eval
-N_Sobol = 1e3; % number of Sobol samples in each dimension
+N_SS = 1e2; % number of inner QoI evals for SS for each outer QoI eval
+N_Sobol = 1e2; % number of Sobol samples in each dimension
 ndim = 3; % dimension of SLSA param vector
 tau_RE = 4.5; % rare event threshold
 p0 = 0.1; % quantile for SS
