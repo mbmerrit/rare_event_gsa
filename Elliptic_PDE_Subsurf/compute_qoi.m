@@ -53,8 +53,5 @@ elseif strcmp(method,'fix_kle') == 1
         qoi_tau(i) = Time(end);
     end
     
-%qoi_tau = exp(X); % tail estimation of log-normal example
-%mu = [1 2 3 4 5]; sigma = [10 8 6 4 2]; % hyperparameters
-%qoi_tau = sum(X .* sigma + mu,2) / sqrt(5); % example from Sehic paper
   
 end

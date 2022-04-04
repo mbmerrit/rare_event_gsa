@@ -53,7 +53,7 @@ end
 
 toc
 
-disp('NEXT, WE POST-PROCESS DATA WITH SPARSE REGRESSION CODES')
+% Next, we post process the data with sparse regression codes
 addpath ../uqtk_matlab/spgl1-1.9 % path to sparse regression codes
 if exist('verb')
     ;
@@ -62,7 +62,7 @@ else
 end
 opts = spgSetParms('verbosity',verb); % can be used to silence output
 tau = 5e-2; % regularization coefficient for sparse regression
-[pce_spreg, L] = uq_l1regression(pcdata, X_lhs, QoI_evals, tau, opts);
+[pce_spreg, L] = uq_l1regression(pcdata, X_transf, QoI_evals, tau, opts);
 
 
 % This code can be used to sample the constructed PCE for verification
