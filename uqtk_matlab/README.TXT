@@ -1,6 +1,7 @@
 Introduction:
 -------------
-This folder contains the source codes for the UQ Toolbox.  
+This folder contains the source codes for a previous release of the UQ Toolbox.  
+The latest version of the UQ Toolkit can be found at https://www.sandia.gov/uqtoolkit/.
 UQ Toolbox is a set of Matlab routines for doing UQ and is a part of 
 UQ Toolkit. This collection of routines are a result of collaborations
 of the following people:
