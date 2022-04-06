@@ -15,3 +15,5 @@ Variance-based global sensitivity analysis is an essential tool for characterizi
 
 ## Rare event simulation
 A rare event probability (or failure probability) quantifies the probability of some extreme event or failure in a system. Common examples are structural failure, tsunami damage prediction, or failure prediction in a nuclear waste repository. In each of these scenarios, uncertain model quantities are at play and assumptions are typically made about the distributional characteristics of said quantities. In this context, while GSA is an attractive tool, it represents a major computational challenge. By their naturem, estimating the probability of a rare event is inherently challenging. Through the use of advanced rare event simulation techniques and PCE, we aim to efficiently perform GSA on rare event probabilities. 
+
+For additional details, contact Michael Merritt at mbmerrit@ncsu.edu
